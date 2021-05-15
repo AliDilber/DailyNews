@@ -1,0 +1,152 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DAILY NEWS|Register</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="https://kit.fontawesome.com/95a3ae1020.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="p-5 bg-secondary text-center text-warning">
+            <h1>DAILY NEWS</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sport.html"><i class="fas fa-futbol"></i> Sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="travel.html"><i class="fas fa-suitcase-rolling"></i> Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="culture.html"><i class="fas fa-atlas"></i> Culture</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="more.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-question-circle"></i> More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="aboutme.html">About me</a></li>
+                                <li><a class="dropdown-item" href="contactme.html">Contact me</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="signin.html"><i class="fas fa-sign-in-alt"></i> Sign in</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" action="https://www.google.com/search" method="get" name="searchform"
+                          target="_blank">
+                        <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main class="bg-whiteyorange pt-4 pb-4 main-background">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-8 col-xl-6 ">
+                        <div class="register-section w-100 justify-content-center p-4">
+                            <section>
+                                <h5>Please fulfill informations for registration</h5>
+                            </section>
+                            <form action="thanks.html" method="post" class="form-inline" id="form"
+                                  enctype="multipart/form-data">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="username" name="username"
+                                           placeholder="Username" required>
+                                    <label for="username">Username</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="password" name="password"
+                                           placeholder="Password" required>
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input type="radio" name="sex" class="btn-check" id="male" value="male"
+                                           autocomplete="off">
+                                    <label class="btn btn-outline-primary btn-sm" for="male">Male</label>
+
+                                    <input type="radio" name="sex" class="btn-check" id="female" value="female"
+                                           autocomplete="off">
+                                    <label class="btn btn-outline-primary btn-sm" for="female">Female</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="phone" class="form-control" id="phone" name="phone"
+                                           placeholder="phone" pattern="[0-9]{11}" required>
+                                    <label for="telephone">05XXXXXXXXX</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" id="birthday" name="birthday" required>
+                                    <label for="birthday">Birthday</label>
+                                </div>
+                                <label for="ppFile">Profile photo: </label>
+                                <input type="file" class="form-control" id="ppFile" name="filename">
+
+                                Mark your interests: <br>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="btn-check" name="music" value="music" id="music">
+                                    <label for="music" class="btn btn-outline-primary m-2">Music</label>
+                                    <input type="checkbox" class="btn-check" name="sports" value="sports" id="sports">
+                                    <label for="sports" class="btn btn-outline-primary m-2">Sports</label>
+                                    <input type="checkbox" class="btn-check" name="science" value="science"
+                                           id="science">
+                                    <label for="science" class="btn btn-outline-primary m-2">Science</label>
+                                    <input type="checkbox" class="btn-check" name="economy" value="economy"
+                                           id="economy">
+                                    <label for="economy" class="btn btn-outline-primary m-2">Economy</label>
+                                    <input type="checkbox" class="btn-check" name="travel" value="travel" id="travel">
+                                    <label for="travel" class="btn btn-outline-primary m-2">Travel</label>
+                                    <input type="checkbox" class="btn-check" name="health" value="health"
+                                           id="health">
+                                    <label for="health" class="btn btn-outline-primary m-2">Health</label>
+                                    <input type="checkbox" class="btn-check" name="food" value="food"
+                                           id="food">
+                                    <label for="food" class="btn btn-outline-primary m-2">Food</label>
+
+
+
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-warning btn-outline-dark w-100">Submit</button>
+                                <input type="reset" class="btn btn-outline-dark btn-warning w-100" value="Reset">
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center bg-dark text-warning pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xl-6"><h3>About me</h3>
+                        <p>My name is Ali DİLBER, I'm a computer engineering student in Eskişehir Technical University. </p></div>
+                    <div class="col-md-12 col-xl-6"><h3>All rights reserved</h3>
+                        <p><i class="fas fa-address-card"></i> Contect number +905416183604</p>
+                        <p><i class="fas fa-envelope-open-text"></i> alidilber@eskisehir.edu.tr</p></div>
+                </div>
+            </div>
+
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>   
+    </body>
+</html>

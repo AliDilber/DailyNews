@@ -1,0 +1,61 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+/**Navbar**/
+
+a.active {
+    font-size: 1.3rem;
+}
+
+article img {
+max-width: 120px;
+width: 100%;
+height: auto;
+transition: all 0.5s;
+}
+
+article img:hover {
+max-width: 200px;
+}
+
+
+input.read-more-state {
+display: none;
+}
+
+p.read-more-target {
+font-size: 0;
+opacity: 0;
+transition: 0.25s ease;
+}
+
+input.read-more-state:checked ~ div.read-more-wrap p.read-more-target {
+font-size: inherit;
+max-height: 999em;
+opacity: 1;
+}
+
+input.read-more-state ~ label.read-more-trigger::before {
+content: "Show More";
+}
+
+input.read-more-state:checked ~ label.read-more-trigger::before {
+content: "Show Less";
+}
+
+label.read-more-trigger {
+margin: 0.6rem 0;
+padding: 0.6rem;
+cursor: default;
+display: inline-block;
+background-color: black;
+color: darkgoldenrod;
+transition: 0.5s ease;
+}
+
+label.read-more-trigger:hover {
+background-color: gray;
+color: darkblue;
+}
